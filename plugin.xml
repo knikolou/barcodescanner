@@ -37,7 +37,6 @@
       <activity android:name="com.google.zxing.client.android.encode.EncodeActivity" android:label="Share"/>
     </config-file>
     <config-file target="AndroidManifest.xml" parent="/manifest">
-      <uses-permission android:name="android.permission.CAMERA"/>
       <uses-permission android:name="android.permission.FLASHLIGHT"/>
     </config-file>
     <framework src="src/android/barcodescanner.gradle" custom="true" type="gradleReference"/>
@@ -62,9 +61,9 @@
   </platform>
   <platform name="browser">
     <config-file target="config.xml" parent="/*">
-      <!--<feature name="BarcodeScanner">
+     <feature name="BarcodeScanner">
         <param name="browser-package" value="BarcodeScanner"/>
-      </feature> -->
+      </feature>
      </config-file>
     <js-module src="src/browser/BarcodeScannerProxy.js" name="BarcodeScannerProxy">
       <runs/>
