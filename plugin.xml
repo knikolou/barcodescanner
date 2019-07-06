@@ -62,10 +62,10 @@
   </platform>
   <platform name="browser">
     <config-file target="config.xml" parent="/*">
-      <feature name="BarcodeScanner">
+      <!--<feature name="BarcodeScanner">
         <param name="browser-package" value="BarcodeScanner"/>
-      </feature>
-    </config-file>
+      </feature> -->
+     </config-file>
     <js-module src="src/browser/BarcodeScannerProxy.js" name="BarcodeScannerProxy">
       <runs/>
     </js-module>
